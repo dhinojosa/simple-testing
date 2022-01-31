@@ -115,7 +115,7 @@ public class WalletTest {
     @Test
     public void testWalletDepositShouldIncreaseBalance() {
         emptyWallet.deposit(5);
-        assertThat(emptyWallet.getBalance()).isNegative();
+        assertThat(emptyWallet.getBalance()).isPositive();
     }
 
     @Test
